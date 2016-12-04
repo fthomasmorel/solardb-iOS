@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11535.1" systemVersion="16A304a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11523"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ChartView" customModule="SolarDB" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="427" height="231"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Production" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pFu-u8-Wsh">
+                    <rect key="frame" x="8" y="8" width="411" height="38"/>
+                    <color key="backgroundColor" red="0.9946769754" green="0.9946769754" blue="0.9946769754" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="38" id="CQu-Og-ubV"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="25"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2ai-FT-jeZ">
+                    <rect key="frame" x="0.0" y="45" width="427" height="178"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aujourd'hui" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jco-04-8ho">
+                    <rect key="frame" x="8" y="41" width="411" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="VYN-mm-iDX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="13"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Jco-04-8ho" firstAttribute="top" secondItem="pFu-u8-Wsh" secondAttribute="bottom" constant="-5" id="1JA-xP-Ajv"/>
+                <constraint firstItem="Jco-04-8ho" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="9Hj-BN-wJw"/>
+                <constraint firstAttribute="trailing" secondItem="Jco-04-8ho" secondAttribute="trailing" constant="8" id="FWT-Nb-yBb"/>
+                <constraint firstAttribute="trailing" secondItem="pFu-u8-Wsh" secondAttribute="trailing" constant="8" id="Kb8-EA-szh"/>
+                <constraint firstItem="pFu-u8-Wsh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="PL7-sY-J3X"/>
+                <constraint firstAttribute="bottom" secondItem="2ai-FT-jeZ" secondAttribute="bottom" constant="8" id="XMe-Ub-osJ"/>
+                <constraint firstItem="pFu-u8-Wsh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="f3L-uy-aeN"/>
+                <constraint firstItem="2ai-FT-jeZ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="oMh-Is-4mu"/>
+                <constraint firstItem="2ai-FT-jeZ" firstAttribute="top" secondItem="Jco-04-8ho" secondAttribute="bottom" constant="-20" id="psw-MM-bIm"/>
+                <constraint firstAttribute="trailing" secondItem="2ai-FT-jeZ" secondAttribute="trailing" id="zOO-fP-fWl"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="chartView" destination="2ai-FT-jeZ" id="MN2-AI-Ehc"/>
+                <outlet property="subtitleLabel" destination="Jco-04-8ho" id="gnb-BO-rei"/>
+                <outlet property="titleLabel" destination="pFu-u8-Wsh" id="Eyj-g1-qQN"/>
+            </connections>
+            <point key="canvasLocation" x="56.5" y="-66.5"/>
+        </view>
+    </objects>
+</document>

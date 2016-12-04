@@ -7,21 +7,61 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5DD36B870D5953C9DA7F1C8C /* Pods_SolarDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 002E69551E53F6FD3654159F /* Pods_SolarDB.framework */; };
+		E10657F91DF471B300CF4E83 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10657F81DF471B300CF4E83 /* CacheManager.swift */; };
+		E10657FB1DF4774A00CF4E83 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10657FA1DF4774A00CF4E83 /* DataManager.swift */; };
+		E113305C1DE03FC100E6B779 /* MetricCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E113305B1DE03FC100E6B779 /* MetricCell.xib */; };
+		E113305E1DE040FF00E6B779 /* MetricCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E113305D1DE040FF00E6B779 /* MetricCell.swift */; };
+		E11330601DE09FB400E6B779 /* ChartsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E113305F1DE09FB400E6B779 /* ChartsCell.xib */; };
+		E11330621DE0A12A00E6B779 /* ChartsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11330611DE0A12A00E6B779 /* ChartsCell.swift */; };
+		E18359DC1DE9CB28001E71E1 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18359DB1DE9CB28001E71E1 /* Weather.swift */; };
+		E18359DE1DE9DEF3001E71E1 /* Production.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18359DD1DE9DEF3001E71E1 /* Production.swift */; };
+		E18359E01DEE000A001E71E1 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18359DF1DEE000A001E71E1 /* CalendarViewController.swift */; };
+		E18359E21DF1633F001E71E1 /* HistoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E18359E11DF1633F001E71E1 /* HistoryCell.xib */; };
+		E18359E41DF16447001E71E1 /* HistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18359E31DF16447001E71E1 /* HistoryCell.swift */; };
+		E18359E71DF1654C001E71E1 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18359E61DF1654C001E71E1 /* HistoryViewController.swift */; };
+		E18359E91DF16F8A001E71E1 /* AddRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18359E81DF16F8A001E71E1 /* AddRecordViewController.swift */; };
+		E190BE161DE0CDF8005BBE7D /* ChartView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E190BE151DE0CDF8005BBE7D /* ChartView.xib */; };
+		E190BE181DE0CFD7005BBE7D /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E190BE171DE0CFD7005BBE7D /* ChartView.swift */; };
+		E190BE1B1DE0D14E005BBE7D /* ChartFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E190BE1A1DE0D14E005BBE7D /* ChartFactory.swift */; };
+		E190BE1D1DE0E675005BBE7D /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E190BE1C1DE0E675005BBE7D /* Extension.swift */; };
 		E199B7231DDF1147001ED95C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E199B7221DDF1147001ED95C /* AppDelegate.swift */; };
-		E199B7251DDF1147001ED95C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E199B7241DDF1147001ED95C /* ViewController.swift */; };
+		E199B7251DDF1147001ED95C /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E199B7241DDF1147001ED95C /* DashboardViewController.swift */; };
 		E199B7281DDF1147001ED95C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E199B7261DDF1147001ED95C /* Main.storyboard */; };
 		E199B72A1DDF1147001ED95C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E199B7291DDF1147001ED95C /* Assets.xcassets */; };
 		E199B72D1DDF1147001ED95C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E199B72B1DDF1147001ED95C /* LaunchScreen.storyboard */; };
+		E1D6A2AF1DE589A800CB5E35 /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D6A2AE1DE589A800CB5E35 /* RequestManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		002E69551E53F6FD3654159F /* Pods_SolarDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SolarDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0EEE8CF6447513333090469B /* Pods-SolarDB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SolarDB.release.xcconfig"; path = "Pods/Target Support Files/Pods-SolarDB/Pods-SolarDB.release.xcconfig"; sourceTree = "<group>"; };
+		67514E8D22E54F6984164AFC /* Pods-SolarDB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SolarDB.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SolarDB/Pods-SolarDB.debug.xcconfig"; sourceTree = "<group>"; };
+		E10657F81DF471B300CF4E83 /* CacheManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
+		E10657FA1DF4774A00CF4E83 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		E113305B1DE03FC100E6B779 /* MetricCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MetricCell.xib; sourceTree = "<group>"; };
+		E113305D1DE040FF00E6B779 /* MetricCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetricCell.swift; sourceTree = "<group>"; };
+		E113305F1DE09FB400E6B779 /* ChartsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChartsCell.xib; sourceTree = "<group>"; };
+		E11330611DE0A12A00E6B779 /* ChartsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartsCell.swift; sourceTree = "<group>"; };
+		E18359DB1DE9CB28001E71E1 /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		E18359DD1DE9DEF3001E71E1 /* Production.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Production.swift; sourceTree = "<group>"; };
+		E18359DF1DEE000A001E71E1 /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		E18359E11DF1633F001E71E1 /* HistoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HistoryCell.xib; sourceTree = "<group>"; };
+		E18359E31DF16447001E71E1 /* HistoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryCell.swift; sourceTree = "<group>"; };
+		E18359E61DF1654C001E71E1 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		E18359E81DF16F8A001E71E1 /* AddRecordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddRecordViewController.swift; sourceTree = "<group>"; };
+		E190BE151DE0CDF8005BBE7D /* ChartView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChartView.xib; sourceTree = "<group>"; };
+		E190BE171DE0CFD7005BBE7D /* ChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		E190BE1A1DE0D14E005BBE7D /* ChartFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartFactory.swift; sourceTree = "<group>"; };
+		E190BE1C1DE0E675005BBE7D /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		E199B71F1DDF1147001ED95C /* SolarDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SolarDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E199B7221DDF1147001ED95C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E199B7241DDF1147001ED95C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E199B7241DDF1147001ED95C /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		E199B7271DDF1147001ED95C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E199B7291DDF1147001ED95C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E199B72C1DDF1147001ED95C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E199B72E1DDF1147001ED95C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1D6A2AE1DE589A800CB5E35 /* RequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +69,76 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DD36B870D5953C9DA7F1C8C /* Pods_SolarDB.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D815A5632C0C2D6323353B31 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				67514E8D22E54F6984164AFC /* Pods-SolarDB.debug.xcconfig */,
+				0EEE8CF6447513333090469B /* Pods-SolarDB.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E11330561DE034C900E6B779 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				E113305B1DE03FC100E6B779 /* MetricCell.xib */,
+				E113305D1DE040FF00E6B779 /* MetricCell.swift */,
+				E113305F1DE09FB400E6B779 /* ChartsCell.xib */,
+				E11330611DE0A12A00E6B779 /* ChartsCell.swift */,
+				E190BE151DE0CDF8005BBE7D /* ChartView.xib */,
+				E190BE171DE0CFD7005BBE7D /* ChartView.swift */,
+				E18359E11DF1633F001E71E1 /* HistoryCell.xib */,
+				E18359E31DF16447001E71E1 /* HistoryCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		E18359DA1DE9CB1B001E71E1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E18359DB1DE9CB28001E71E1 /* Weather.swift */,
+				E18359DD1DE9DEF3001E71E1 /* Production.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		E18359E51DF16535001E71E1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E199B7241DDF1147001ED95C /* DashboardViewController.swift */,
+				E18359DF1DEE000A001E71E1 /* CalendarViewController.swift */,
+				E18359E61DF1654C001E71E1 /* HistoryViewController.swift */,
+				E18359E81DF16F8A001E71E1 /* AddRecordViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		E190BE191DE0D141005BBE7D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E1D6A2AE1DE589A800CB5E35 /* RequestManager.swift */,
+				E190BE1A1DE0D14E005BBE7D /* ChartFactory.swift */,
+				E190BE1C1DE0E675005BBE7D /* Extension.swift */,
+				E10657F81DF471B300CF4E83 /* CacheManager.swift */,
+				E10657FA1DF4774A00CF4E83 /* DataManager.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
 		E199B7161DDF1147001ED95C = {
 			isa = PBXGroup;
 			children = (
 				E199B7211DDF1147001ED95C /* SolarDB */,
 				E199B7201DDF1147001ED95C /* Products */,
+				D815A5632C0C2D6323353B31 /* Pods */,
+				F25D492249CA21637FA7E634 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +153,25 @@
 		E199B7211DDF1147001ED95C /* SolarDB */ = {
 			isa = PBXGroup;
 			children = (
+				E18359E51DF16535001E71E1 /* Controllers */,
+				E18359DA1DE9CB1B001E71E1 /* Model */,
+				E190BE191DE0D141005BBE7D /* Helpers */,
+				E11330561DE034C900E6B779 /* Cells */,
 				E199B7221DDF1147001ED95C /* AppDelegate.swift */,
-				E199B7241DDF1147001ED95C /* ViewController.swift */,
 				E199B7261DDF1147001ED95C /* Main.storyboard */,
 				E199B7291DDF1147001ED95C /* Assets.xcassets */,
 				E199B72B1DDF1147001ED95C /* LaunchScreen.storyboard */,
 				E199B72E1DDF1147001ED95C /* Info.plist */,
 			);
 			path = SolarDB;
+			sourceTree = "<group>";
+		};
+		F25D492249CA21637FA7E634 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				002E69551E53F6FD3654159F /* Pods_SolarDB.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +181,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E199B7311DDF1147001ED95C /* Build configuration list for PBXNativeTarget "SolarDB" */;
 			buildPhases = (
+				D704D20571ECD108AF427F1C /* [CP] Check Pods Manifest.lock */,
 				E199B71B1DDF1147001ED95C /* Sources */,
 				E199B71C1DDF1147001ED95C /* Frameworks */,
 				E199B71D1DDF1147001ED95C /* Resources */,
+				8143010405A95601E8E7BBE4 /* [CP] Embed Pods Frameworks */,
+				1FA753FD7BC909BD5D1430FA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,21 +237,87 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E113305C1DE03FC100E6B779 /* MetricCell.xib in Resources */,
+				E18359E21DF1633F001E71E1 /* HistoryCell.xib in Resources */,
 				E199B72D1DDF1147001ED95C /* LaunchScreen.storyboard in Resources */,
 				E199B72A1DDF1147001ED95C /* Assets.xcassets in Resources */,
+				E190BE161DE0CDF8005BBE7D /* ChartView.xib in Resources */,
+				E11330601DE09FB400E6B779 /* ChartsCell.xib in Resources */,
 				E199B7281DDF1147001ED95C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1FA753FD7BC909BD5D1430FA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SolarDB/Pods-SolarDB-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8143010405A95601E8E7BBE4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SolarDB/Pods-SolarDB-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D704D20571ECD108AF427F1C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E199B71B1DDF1147001ED95C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E199B7251DDF1147001ED95C /* ViewController.swift in Sources */,
+				E18359E01DEE000A001E71E1 /* CalendarViewController.swift in Sources */,
+				E10657FB1DF4774A00CF4E83 /* DataManager.swift in Sources */,
+				E199B7251DDF1147001ED95C /* DashboardViewController.swift in Sources */,
+				E18359E41DF16447001E71E1 /* HistoryCell.swift in Sources */,
 				E199B7231DDF1147001ED95C /* AppDelegate.swift in Sources */,
+				E18359E71DF1654C001E71E1 /* HistoryViewController.swift in Sources */,
+				E190BE1B1DE0D14E005BBE7D /* ChartFactory.swift in Sources */,
+				E18359DE1DE9DEF3001E71E1 /* Production.swift in Sources */,
+				E18359E91DF16F8A001E71E1 /* AddRecordViewController.swift in Sources */,
+				E18359DC1DE9CB28001E71E1 /* Weather.swift in Sources */,
+				E11330621DE0A12A00E6B779 /* ChartsCell.swift in Sources */,
+				E113305E1DE040FF00E6B779 /* MetricCell.swift in Sources */,
+				E10657F91DF471B300CF4E83 /* CacheManager.swift in Sources */,
+				E1D6A2AF1DE589A800CB5E35 /* RequestManager.swift in Sources */,
+				E190BE181DE0CFD7005BBE7D /* ChartView.swift in Sources */,
+				E190BE1D1DE0E675005BBE7D /* Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +438,7 @@
 		};
 		E199B7321DDF1147001ED95C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67514E8D22E54F6984164AFC /* Pods-SolarDB.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9JPSY4Q8SW;
@@ -267,11 +447,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.thomasmorel.SolarDB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		E199B7331DDF1147001ED95C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0EEE8CF6447513333090469B /* Pods-SolarDB.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9JPSY4Q8SW;
@@ -280,6 +462,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.thomasmorel.SolarDB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -302,6 +485,7 @@
 				E199B7331DDF1147001ED95C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

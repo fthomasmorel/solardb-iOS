@@ -1,0 +1,20 @@
+PODS:
+  - Alamofire (4.1.0)
+  - Charts (3.0.0):
+    - Charts/Core (= 3.0.0)
+  - Charts/Core (3.0.0)
+  - CVCalendar (1.4.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - Charts
+  - CVCalendar
+
+SPEC CHECKSUMS:
+  Alamofire: e266cf991b933498df791e645e0d8ac294492153
+  Charts: beb341928d2135613b4325a6c6aff9f2f6de895e
+  CVCalendar: 61912eb5dc39c3bcfe22a731147a559a696fbc15
+
+PODFILE CHECKSUM: 105c21a3828a7d194cc9667576156e8bbe032506
+
+COCOAPODS: 1.1.0.rc.1

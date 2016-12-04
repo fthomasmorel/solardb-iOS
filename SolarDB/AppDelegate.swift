@@ -7,15 +7,39 @@
 //
 
 import UIKit
+import UserNotifications
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    let kSolarDBNotificationUUID = "kSolarDBNotificationUUID"
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+
+        let calendar: Calendar = Calendar.current
+        var dateFire = Date()
+        
+        var fireComponents = calendar.dateComponents([.day, .month, .year, .hour, .minute], from: dateFire)
+        
+        if (fireComponents.hour! >= 7) {
+            dateFire = dateFire.addingTimeInterval(86400)
+            fireComponents = calendar.dateComponents([.day, .month, .year, .hour, .minute], from: dateFire)
+        }
+        
+        fireComponents.hour = 7
+        fireComponents.minute = 0
+        
+        dateFire = calendar.date(from: fireComponents)!
+        
+        let localNotification = UILocalNotification()
+        localNotification.fireDate = dateFire
+        localNotification.alertBody = "Penses à saisir le relevé des panneaux solaires ☀️😎📈"
+        localNotification.repeatInterval = .day
+        
+        UIApplication.shared.scheduleLocalNotification(localNotification)
+        
         return true
     }
 

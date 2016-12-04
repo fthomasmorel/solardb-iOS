@@ -1,0 +1,6 @@
+framework module Pods_SolarDB {
+  umbrella header "Pods-SolarDB-umbrella.h"
+
+  export *
+  module * { export * }
+}
