@@ -21,6 +21,16 @@ class CacheManager: AnyObject {
     
     init() {}
     
+    func empty(){
+        self.yearlyWeather = [:]
+        self.monthlyWeather = [:]
+        self.dailyWeather = [:]
+        
+        self.yearlyProduction = [:]
+        self.monthlyProduction = [:]
+        self.dailyProduction = [:]
+    }
+    
     func saveWeather(year: Date, weather: [[Weather]]){
         DispatchQueue.main.async {
             self.yearlyWeather[year] = weather

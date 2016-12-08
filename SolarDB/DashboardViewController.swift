@@ -220,11 +220,11 @@ class DashboardViewController: UIViewController, UITableViewDataSource, UITableV
     }
     
     func updateData(){
-//        self.loadingView.alpha = 0
-//        self.loadingView.isHidden = false
-//        UIView.animate(withDuration: 0.25, animations: {
-//            self.loadingView.alpha = 1
-//        })
+        self.loadingView.alpha = 0
+        self.loadingView.isHidden = false
+        UIView.animate(withDuration: 0.25, animations: {
+            self.loadingView.alpha = 1
+        })
         switch self.currentTimeScale {
         case .day:
             self.topDateLabel.text = self.currentDate.toString()
@@ -242,12 +242,11 @@ class DashboardViewController: UIViewController, UITableViewDataSource, UITableV
         self.getYearlyData(date: self.currentDate)
         
         self.downloadGroup.notify(queue: DispatchQueue.main, work: DispatchWorkItem(block: {
-//            UIView.animate(withDuration: 0.25, animations: { 
-//                self.loadingView.alpha = 0
-//            }, completion: { (finished) in
-//                self.loadingView.isHidden = true
-//            })
-            self.loadingView.isHidden = true
+            UIView.animate(withDuration: 0.25, animations: { 
+                self.loadingView.alpha = 0
+            }, completion: { (finished) in
+                self.loadingView.isHidden = true
+            })
             self.tableView.reloadData()
         }))
     }
@@ -256,6 +255,7 @@ class DashboardViewController: UIViewController, UITableViewDataSource, UITableV
     func didSelect(date: Date, scale: TimeScale){
         self.currentDate = date
         self.currentTimeScale = scale
+        self.cacheManager.empty()
         self.updateData()
     }
     

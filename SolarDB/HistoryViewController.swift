@@ -58,6 +58,7 @@ class HistoryViewController: UIViewController, UITableViewDataSource, UITableVie
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.tableView.cellForRow(at: indexPath)?.setSelected(false, animated: false)
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let controller = storyboard.instantiateViewController(withIdentifier: "AddRecordViewController") as! AddRecordViewController
         controller.modalPresentationStyle = .overCurrentContext

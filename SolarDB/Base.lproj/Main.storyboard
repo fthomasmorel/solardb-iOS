@@ -369,21 +369,12 @@
                                 <blurEffect style="light"/>
                             </visualEffectView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pyH-OE-LFk">
-                                <rect key="frame" x="40" y="125" width="295" height="272"/>
+                                <rect key="frame" x="40" y="187" width="295" height="210"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Production (kW)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dkz-xC-jne">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Production Total (kW)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dkz-xC-jne">
                                         <rect key="frame" x="8" y="68" width="279" height="53"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="53" id="Fer-vI-YLG"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total (kW)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PjC-Eg-B2u">
-                                        <rect key="frame" x="8" y="143" width="279" height="53"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="53" id="kM3-7j-NZY"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -400,6 +391,7 @@
                                     </label>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="0" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Blo-lg-wWC">
                                         <rect key="frame" x="8" y="113" width="279" height="30"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="Jcv-1V-rtv"/>
                                         </constraints>
@@ -407,17 +399,8 @@
                                         <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="0" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PCl-Yi-dJF">
-                                        <rect key="frame" x="8" y="184" width="279" height="30"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="kcC-xp-OvU"/>
-                                        </constraints>
-                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="17"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                                    </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DP7-uJ-Csl">
-                                        <rect key="frame" x="57" y="234" width="59" height="30"/>
+                                        <rect key="frame" x="57" y="173" width="59" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="3nC-j0-DbO"/>
                                             <constraint firstAttribute="width" constant="59" id="u1S-fA-9W1"/>
@@ -429,7 +412,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gFw-fP-I4B">
-                                        <rect key="frame" x="180" y="234" width="59" height="30"/>
+                                        <rect key="frame" x="180" y="173" width="59" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="BUR-ZG-rhe"/>
                                             <constraint firstAttribute="width" constant="59" id="Pa9-hD-x6R"/>
@@ -441,26 +424,20 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="1" alpha="0.88607662671232879" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="gnL-vH-c1I" secondAttribute="trailing" constant="8" id="4Bp-hb-bxh"/>
                                     <constraint firstAttribute="trailing" secondItem="Dkz-xC-jne" secondAttribute="trailing" constant="8" id="An6-eT-YR4"/>
-                                    <constraint firstItem="PjC-Eg-B2u" firstAttribute="leading" secondItem="pyH-OE-LFk" secondAttribute="leading" constant="8" id="BDr-Yt-fS8"/>
-                                    <constraint firstItem="gFw-fP-I4B" firstAttribute="top" secondItem="PCl-Yi-dJF" secondAttribute="bottom" constant="20" id="BQw-rV-thY"/>
                                     <constraint firstItem="Blo-lg-wWC" firstAttribute="top" secondItem="Dkz-xC-jne" secondAttribute="bottom" constant="-8" id="IAO-gy-DoS"/>
-                                    <constraint firstAttribute="height" constant="272" id="IVH-fh-AEc"/>
-                                    <constraint firstItem="PCl-Yi-dJF" firstAttribute="leading" secondItem="pyH-OE-LFk" secondAttribute="leading" constant="8" id="KP8-Nb-0FH"/>
-                                    <constraint firstAttribute="trailing" secondItem="PjC-Eg-B2u" secondAttribute="trailing" constant="8" id="NiU-GP-JNR"/>
+                                    <constraint firstAttribute="height" constant="210" id="IVH-fh-AEc"/>
                                     <constraint firstItem="gnL-vH-c1I" firstAttribute="top" secondItem="pyH-OE-LFk" secondAttribute="top" constant="15" id="Oxa-FW-J3X"/>
                                     <constraint firstItem="gnL-vH-c1I" firstAttribute="leading" secondItem="pyH-OE-LFk" secondAttribute="leading" constant="8" id="RCV-Rq-yop"/>
                                     <constraint firstItem="Blo-lg-wWC" firstAttribute="leading" secondItem="pyH-OE-LFk" secondAttribute="leading" constant="8" id="S6g-Ql-0QF"/>
-                                    <constraint firstItem="DP7-uJ-Csl" firstAttribute="top" secondItem="PCl-Yi-dJF" secondAttribute="bottom" constant="20" id="U2e-5y-Sl8"/>
-                                    <constraint firstItem="PjC-Eg-B2u" firstAttribute="top" secondItem="Blo-lg-wWC" secondAttribute="bottom" id="YPl-Ge-EYP"/>
                                     <constraint firstAttribute="trailing" secondItem="Blo-lg-wWC" secondAttribute="trailing" constant="8" id="dWE-qg-wvS"/>
-                                    <constraint firstAttribute="trailing" secondItem="PCl-Yi-dJF" secondAttribute="trailing" constant="8" id="fsm-QA-jNN"/>
                                     <constraint firstItem="Dkz-xC-jne" firstAttribute="top" secondItem="gnL-vH-c1I" secondAttribute="bottom" id="gtP-nr-eBJ"/>
-                                    <constraint firstItem="PCl-Yi-dJF" firstAttribute="top" secondItem="PjC-Eg-B2u" secondAttribute="bottom" constant="-12" id="nxy-Hz-6BT"/>
+                                    <constraint firstItem="DP7-uJ-Csl" firstAttribute="top" secondItem="Blo-lg-wWC" secondAttribute="bottom" constant="30" id="jbC-rb-g2t"/>
                                     <constraint firstItem="DP7-uJ-Csl" firstAttribute="leading" secondItem="pyH-OE-LFk" secondAttribute="leading" constant="57" id="qUk-Pl-jgb"/>
+                                    <constraint firstItem="gFw-fP-I4B" firstAttribute="top" secondItem="Blo-lg-wWC" secondAttribute="bottom" constant="30" id="sU9-hb-340"/>
                                     <constraint firstItem="Dkz-xC-jne" firstAttribute="leading" secondItem="pyH-OE-LFk" secondAttribute="leading" constant="8" id="w1a-5y-qFB"/>
                                     <constraint firstAttribute="trailing" secondItem="gFw-fP-I4B" secondAttribute="trailing" constant="56" id="wdZ-KD-Ura"/>
                                 </constraints>
@@ -480,7 +457,6 @@
                     <connections>
                         <outlet property="dateLabel" destination="gnL-vH-c1I" id="He6-Iw-qms"/>
                         <outlet property="productionTextField" destination="Blo-lg-wWC" id="rMy-N1-4js"/>
-                        <outlet property="totalTextField" destination="PCl-Yi-dJF" id="m5a-Pe-whY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T0q-dr-QV6" userLabel="First Responder" sceneMemberID="firstResponder"/>

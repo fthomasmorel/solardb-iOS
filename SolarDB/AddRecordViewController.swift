@@ -13,7 +13,6 @@ class AddRecordViewController: UIViewController {
     
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var productionTextField: UITextField!
-    @IBOutlet weak var totalTextField: UITextField!
     
     var date = Date()
     var production: Production?
@@ -26,26 +25,27 @@ class AddRecordViewController: UIViewController {
         self.dateLabel.text = self.date.toString()
         if let prod = self.production {
             self.dateLabel.text = "\(prod.date.toString())"
-            self.productionTextField.text = "\(Int(prod.production))"
-            self.totalTextField.text = "\(Int(prod.total))"
+            self.productionTextField.text = "\(Int(prod.total))"
         }
     }
     
     @IBAction func cancelAction(_ sender: Any) {
         self.productionTextField.resignFirstResponder()
-        self.totalTextField.resignFirstResponder()
         self.dismiss(animated: true, completion: nil)
     }
     
     @IBAction func saveAction(_ sender: Any) {
-        guard let prod = productionTextField.text, prod.characters.count > 0 else { return }
-        guard let total = totalTextField.text, total.characters.count > 0 else { return }
+        guard let total = productionTextField.text, total.characters.count > 0 else { return }
         self.productionTextField.resignFirstResponder()
-        self.totalTextField.resignFirstResponder()
         
-        let production = Production(date: self.date, production: Double(prod)!, total: Double(total)!)
-        RequestManager.record(production: production)
-        
+        if let previousProduction = self.production {
+            let prod = Double(total)!-previousProduction.total
+            let production = Production(date: self.date, production: prod, total: Double(total)!)
+            RequestManager.record(production: production)
+        }else{
+            let production = Production(date: self.date, production: Double(total)!, total: Double(total)!)
+            RequestManager.record(production: production)
+        }
         self.dismiss(animated: true, completion: nil)
     }
     

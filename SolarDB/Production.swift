@@ -60,12 +60,12 @@ class Production: AnyObject{
         var result: [Production?] = []
         var currentDate = from
         while currentDate <= to {
-            currentDate.addTimeInterval(86400)
             if let production = data[currentDate] {
                 result.append(production)
             }else{
                 result.append(nil)
             }
+            currentDate.addTimeInterval(86400)
         }
         return result
     }
